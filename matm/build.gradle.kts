@@ -1,5 +1,6 @@
 plugins {
     id("com.android.library")
+    id("maven-publish")
 }
 
 android {
@@ -15,7 +16,7 @@ android {
 
     buildTypes {
         release {
-            isMinifyEnabled = true
+            isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
@@ -41,6 +42,19 @@ android {
 configurations.all {
     resolutionStrategy {
         force("com.squareup.okhttp3:okhttp:4.10.0")
+    }
+}
+publishing {
+    publications {
+        create<MavenPublication>("release") {
+            // Artifact details:
+            groupId = "com.acemoney"
+            artifactId = "matm"
+            version = "1.0.1"
+//
+//            // Tell Gradle to publish the Android library
+//            from(components["release"])
+        }
     }
 }
 
