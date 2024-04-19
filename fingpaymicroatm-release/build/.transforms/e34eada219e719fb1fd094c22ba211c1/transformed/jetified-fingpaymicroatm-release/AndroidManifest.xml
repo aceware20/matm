@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fingpay.microatmsdk"
+    android:versionCode="4"
+    android:versionName="2.0" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="31" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+
+    <!-- <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" /> -->
+    <application android:label="@string/app_name" >
+        <activity
+            android:name="com.fingpay.microatmsdk.MicroAtmLoginScreen"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:launchMode="standard"
+            android:noHistory="true"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.fingpay.microatmsdk.MATMHistoryScreen"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:launchMode="standard"
+            android:noHistory="true"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.fingpay.microatmsdk.DeviceConnectActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.fingpay.microatmsdk.VendorVerifyActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.fingpay.microatmsdk.GetKekActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.fingpay.microatmsdk.DecryptAndLoadKekActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.fingpay.microatmsdk.KekVerfActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.fingpay.microatmsdk.GetKeysActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.fingpay.microatmsdk.LoadMainKeyActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.fingpay.microatmsdk.LoadDukptActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.fingpay.microatmsdk.KeysVerfActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.fingpay.microatmsdk.EmvAidParamsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.fingpay.microatmsdk.SetEmvTagActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.fingpay.microatmsdk.DownloadAidActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.fingpay.microatmsdk.ClearCapkActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.fingpay.microatmsdk.DownloadPukActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.fingpay.microatmsdk.GetLimitsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.fingpay.microatmsdk.SwipeCardActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name="com.fingpay.microatmsdk.ReadCardActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name="com.fingpay.microatmsdk.InputPinActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name="com.fingpay.microatmsdk.PostDataActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.fingpay.microatmsdk.SavePosTxnActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.fingpay.microatmsdk.MosambeeStartProcessActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.fingpay.microatmsdk.PostMosambeeDataActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+
+        <service
+            android:name="com.anfu.pos.library.bluetooth4.BluetoothLeService"
+            android:enabled="true" />
+    </application>
+
+</manifest>
