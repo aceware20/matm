@@ -20,3 +20,4 @@ dependencyResolutionManagement {
 rootProject.name = "matmtest"
 include(":app")
 include(":matm")
+include (":fingpaymicroatm-release")

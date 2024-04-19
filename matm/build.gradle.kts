@@ -50,7 +50,7 @@ publishing {
             // Artifact details:
             groupId = "com.acemoney"
             artifactId = "matm"
-            version = "1.0.2"
+            version = "1.0.3"
 //
 //            // Tell Gradle to publish the Android library
 //            from(components["release"])
@@ -73,7 +73,8 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     implementation(files("libs/ksoap2-android-assembly-3.6.4-jar-with-dependencies.jar"))
     implementation(files("libs/morefun_mpos_sdk_v2.1.20210628.jar"))
-    api(fileTree(mapOf("include" to listOf("fingpaymicroatm-release.aar"), "dir" to "libs")))
+    implementation (project(":fingpaymicroatm-release"))
+//    api(fileTree(mapOf("include" to listOf("fingpaymicroatm-release.aar"), "dir" to "libs")))
 //    implementation(project(":finpay"))
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
