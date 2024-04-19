@@ -1,0 +1,10 @@
+<resources>
+    <string name="need_permissions">Need some Permissions</string>
+    <string name="device_permission">This app needs permission to get Device Information</string>
+    <string name="grant">Grant</string>
+    <string name="unable_toget_permission">Unable to get Permission</string>
+    <string name="cancel">cancel</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="enter_remarks">Enter Remarks</string>
+    <string name="submit">Submit</string>
+</resources>
