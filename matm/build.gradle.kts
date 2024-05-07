@@ -50,7 +50,7 @@ publishing {
             // Artifact details:
             groupId = "com.acemoney"
             artifactId = "matm"
-            version = "1.0.3"
+            version = "1.0.4"
 //
 //            // Tell Gradle to publish the Android library
 //            from(components["release"])

@@ -37,10 +37,11 @@ dependencies {
     implementation("com.google.android.material:material:1.11.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation(project(":matm"))
+//    implementation(project(":matm"))
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     implementation ("com.google.code.gson:gson:2.10")
-//    implementation ("com.github.aceware20:matm:1.0.2")
+    implementation ("com.github.aceware20:matm:1.0.3")
 
 }
