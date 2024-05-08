@@ -50,6 +50,7 @@ afterEvaluate {
         }
     }
 }
+
 //publishing {
 //    publications {
 //        create<MavenPublication>("release") {
