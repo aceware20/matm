@@ -50,12 +50,23 @@ publishing {
             // Artifact details:
             groupId = "com.acemoney"
             artifactId = "matm"
-            version = "1.0.4"
+            version = "1.0.5"
 //
 //            // Tell Gradle to publish the Android library
 //            from(components["release"])
         }
     }
+
+//    repositories {
+//        maven {
+//            name = "GitHubPackages"
+//            url = uri("https://maven.pkg.github.com/octocat/hello-world")
+//            credentials {
+//                username = System.getenv("")
+//                password = System.getenv("")
+//            }
+//        }
+//    }
 }
 //afterEvaluate {
 //    publishing.publications.release.from(components.findByName("android"))
