@@ -16,10 +16,6 @@ dependencyResolutionManagement {
         mavenCentral()
         maven {
             url = uri("https://jitpack.io")
-            credentials {
-                val authToken="jp_h0pvj9i1tf4j12ljjguuil49ni"
-                username=authToken
-            }
         }
     }
 }

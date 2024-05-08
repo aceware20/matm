@@ -30,12 +30,6 @@ android {
     buildFeatures {
         viewBinding=true
     }
-//    configurations {
-//        all {
-//            exclude(group = "com.squareup.okhttp3", module = "okhttp")
-//            exclude(group = "com.squareup.okio", module = "okio")
-//        }
-//    }
 
 
 }
@@ -47,37 +41,19 @@ configurations.all {
 publishing {
     publications {
         create<MavenPublication>("release") {
-            // Artifact details:
             groupId = "com.acemoney"
             artifactId = "matm"
-            version = "1.0.5"
-//
-//            // Tell Gradle to publish the Android library
-//            from(components["release"])
+            version = "1.0.6"
         }
     }
-
-//    repositories {
-//        maven {
-//            name = "GitHubPackages"
-//            url = uri("https://maven.pkg.github.com/octocat/hello-world")
-//            credentials {
-//                username = System.getenv("")
-//                password = System.getenv("")
-//            }
-//        }
-//    }
 }
-//afterEvaluate {
-//    publishing.publications.release.from(components.findByName("android"))
-//}
 
 dependencies {
     implementation(fileTree("libs") {
         include("*.jar")
     })
     implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("com.google.android.material:material:1.11.0")
+    implementation("com.google.android.material:material:1.12.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
@@ -90,9 +66,9 @@ dependencies {
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
     implementation ("com.squareup.okhttp3:logging-interceptor:4.9.3")
-    implementation("com.squareup.okhttp3:okhttp:4.10.0")
-    implementation ("com.squareup.okio:okio:3.0.0")
-    implementation ("com.google.code.gson:gson:2.10")
+    implementation("com.squareup.okhttp3:okhttp:4.12.0")
+    implementation ("com.squareup.okio:okio:3.8.0")
+    implementation ("com.google.code.gson:gson:2.10.1")
     implementation("com.squareup.retrofit2:converter-scalars:2.9.0")
     implementation("org.bouncycastle:bcprov-jdk15on:1.68")
 }
