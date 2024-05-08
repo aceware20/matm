@@ -1,6 +1,6 @@
 plugins {
     id("com.android.library")
-//    id("maven-publish")
+    id("maven-publish")
 }
 
 android {
@@ -36,6 +36,18 @@ android {
 configurations.all {
     resolutionStrategy {
         force("com.squareup.okhttp3:okhttp:4.10.0")
+    }
+}
+
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("release") {
+                groupId = "com.github.aceware20"
+                artifactId = "matm"
+                version = "1.0.8"
+            }
+        }
     }
 }
 //publishing {
