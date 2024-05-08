@@ -1,6 +1,6 @@
 plugins {
     id("com.android.library")
-    id("maven-publish")
+//    id("maven-publish")
 }
 
 android {
@@ -38,15 +38,15 @@ configurations.all {
         force("com.squareup.okhttp3:okhttp:4.10.0")
     }
 }
-publishing {
-    publications {
-        create<MavenPublication>("release") {
-            groupId = "com.acemoney"
-            artifactId = "matm"
-            version = "1.0.6"
-        }
-    }
-}
+//publishing {
+//    publications {
+//        create<MavenPublication>("release") {
+//            groupId = "com.acemoney"
+//            artifactId = "matm"
+//            version = "1.0.6"
+//        }
+//    }
+//}
 
 dependencies {
     implementation(fileTree("libs") {
